@@ -4,12 +4,12 @@ backend:
     media_folder: "public/assets/dog"
     pulic_folder: "/assets/dog"
     collections: 
-      - name: "dog"
-      label: "Dog"
-      Folder: "src/assets/dog"
-      create: true
-     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-     fields:
+    - name: "dog"
+    label: "Dog"
+    Folder: "src/assets/dog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
         - { label: "Title", name: "title", widget: "string" }
        - { label: "Description", name: "description", widget: "string" }
         - { label: "Date", name: "date", widget: "datetime" }
