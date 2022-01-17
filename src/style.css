@@ -45,6 +45,16 @@
   box-sizing: border-box;
 }
 
+/* Social media buttons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -56,7 +66,7 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+  margin: 5;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -139,7 +149,7 @@ strong {
 
 section,
 .section {
-  padding: min(10vh, 10em) 0;
+  padding: min(10vh, 2em) 0;
 }
 
 
@@ -153,12 +163,12 @@ section,
    spacing */
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
+  margin-top: var(--flow-spacer, 0em);
 }
 
 .container {
   margin-inline: auto;
-  padding-inline: 1.5em;
+  padding-inline: 0.5em;
   max-width: 72rem;
 }
 
@@ -197,7 +207,7 @@ section,
   /////////////////////// */
 
 .page-header {
-  padding: 2em 0;
+  padding: 0em 0;
 }
 
 .page-header__content {
@@ -227,7 +237,7 @@ section,
 
 .site-footer {
   --logo-color: currentColor;
-  padding: 2em 0;
+  padding: 1em 0;
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-500);
   text-align: center;
@@ -239,10 +249,10 @@ section,
 
 .hero > div {
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-flow: dense;
   grid-auto-columns: 1fr;
   align-items: center;
-  gap: 3em;
+  gap: 0em;
 }
 
 .hero__image {
@@ -251,7 +261,7 @@ section,
   object-fit: cover;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 50em) {
   .hero > div {
     grid-auto-flow: column;
   }
@@ -262,8 +272,8 @@ section,
 }
 
 .articles__list {
-  --flow-spacer: 3rem;
-  margin: 6rem 0;
+  --flow-spacer: 1rem;
+  margin: 0rem 0;
 }
 
 /* //////////////////////
@@ -286,7 +296,7 @@ section,
 
 .snippet {
   display: grid;
-  gap: 1em;
+  gap: 0em;
   grid-template-areas:
     "image"
     "title"
