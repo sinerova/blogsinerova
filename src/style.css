@@ -309,7 +309,7 @@ section,
   grid-area: image;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: contain;
+  object-fit: cover;
 }
 .snippet__title {
   grid-area: title;
