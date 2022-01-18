@@ -48,7 +48,7 @@
 /* Button */
 .button-3 {
   appearance: none;
-  background-color: #2ea44f;
+  background-color: #0052ac;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -77,33 +77,84 @@
 }
 
 .button-3:hover {
-  background-color: #2c974b;
+  background-color: #003e81;
 }
 
 .button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  box-shadow: rgba(6, 49, 143, 0.4) 0 0 0 3px;
   outline: none;
 }
 
 .button-3:disabled {
-  background-color: #94d3a2;
+  background-color: #4974a1;
   border-color: rgba(27, 31, 35, .1);
   color: rgba(255, 255, 255, .8);
   cursor: default;
 }
 
 .button-3:active {
-  background-color: #298e46;
+  background-color: #005fc5;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
+
 /* Social media buttons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+  background-color: rgba(0, 181, 245, 0.05);
+}
+
+.social-container {
+  width: 350px;
+  margin: 0vh 0;
+  text-align: left;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 0em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.3em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
 }
 
 /* Remove default margin */
@@ -263,7 +314,7 @@ section,
 
 .page-header__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav-list {
@@ -309,7 +360,7 @@ section,
 .hero__image {
   width: 100%;
   /* max-height: max(15rem, 40vh); */
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 @media (min-width: 50em) {
